@@ -52,7 +52,7 @@ Armazena todas as leituras realizadas, incluindo status de luminosidade e regist
 
 ---
 
-##Registro 
+## Registro 
 
 ![captura](img/captura.png)
 
