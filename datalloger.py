@@ -6,12 +6,11 @@ from datetime import datetime
 BH1750_ADDR = 0x37  
 I2C_BUS = 1 
 
-# Comando para modo contínuo de alta resolução
+
 CONT_H_RES_MODE = 0x10 
 
-# Caminho do arquivo de log no microSD
-CAMINHO_ARQUIVO = "/media/caninos/8053-D444/luminus/lux_log.txt"
-DADOS_CAMINHO = "  "
+
+DADOS_CAMINHO = "/home/caninos/Desktop/joao.txt"
 
 try:
     bus = smbus.SMBus(I2C_BUS)
@@ -39,21 +38,21 @@ def classificar_luminosidade(lux):
 def ler_lux():
     # Verifica se o barramento foi inicializado com sucesso
     if bus is None:
-        return None#se o barramento não foi inicializado, retorna None
+        return None
         
     try:
-        bus.write_byte(BH1750_ADDR, CONT_H_RES_MODE)#inicia a medição com o comando CONT_H_RES_MODE que é 0x10 e o endereço do sensor que é BH1750_ADDR, ou seja, 0x23
+        bus.write_byte(BH1750_ADDR, CONT_H_RES_MODE)
         time.sleep(0.2)
-        data = bus.read_i2c_block_data(BH1750_ADDR, 0x00, 2)#lê 2 bytes de dados do sensor pois a luminosidade é representada por 2 bytes
-        raw = (data[0] << 8) | data[1] #combina os 2 bytes em um valor bruto, precisamos fazer um shift do primeiro byte 8 bits para a esquerda e fazer um OR com o segundo byte
-
-        lux = raw / 1.2 #converte o valor bruto para lux, dividindo por 1.2 conforme o datasheet do BH1750
+        data = bus.read_i2c_block_data(BH1750_ADDR, 0x00, 2)
+        raw = (data[0] << 8) | data[1]
+        
+        lux = raw / 1.2
         return lux
-    except Exception as e:#se ocorrer algum erro na leitura do sensor
+    except Exception as e:
         print(f"Erro ao ler BH1750 no barramento {I2C_BUS}:", e)
         return None
 
-if __name__ == "__main__":#se o script for executado diretamente ou seja, não for importado como módulo, esse __name__ é uma variável especial que contém o nome do módulo atual
+if __name__ == "__main__":
     print("Iniciando leitura e salvamento de luminosidade em .txt...")
 
     try:
