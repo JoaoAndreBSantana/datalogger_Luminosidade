@@ -10,7 +10,7 @@ I2C_BUS = 1
 CONT_H_RES_MODE = 0x10 
 
 
-DADOS_CAMINHO = "/home/caninos/Desktop/joao.txt"
+DADOS_CAMINHO = "/home/caninos/joao.txt"
 
 try:
     bus = smbus.SMBus(I2C_BUS)
