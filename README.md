@@ -52,22 +52,12 @@ Armazena todas as leituras realizadas, incluindo status de luminosidade e regist
 
 ---
 
-## Exemplo de Registro (`joao.txt`)
+##Registro 
 
 ![captura](img/captura.png)
 
 
----
 
-## Como Executar
-
-1. Conecte o sensor BH1750 ao barramento I2C do seu dispositivo.  
-2. Verifique se o Python e a biblioteca `smbus` estão instalados.  
-3. Ajuste o caminho do arquivo de saída na variável `DADOS_CAMINHO` no script.  
-4. Execute o script:
-
-```bash
-python bh1750_datalogger.py
 
 
 
