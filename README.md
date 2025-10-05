@@ -1,6 +1,6 @@
 # Datalogger de Luminosidade BH1750
 
-Este projeto implementa um datalogger de luminosidade usando Python e o sensor BH1750 via barramento I2C. O sistema monitora a intensidade luminosa em tempo real, classifica os níveis de luz e salva todas as leituras em arquivo `.txt` para análises futuras. O projeto é indicado para uso acadêmico, experimental ou para monitoramento ambiental contínuo.
+Este projeto implementa um datalogger de luminosidade usando Python e o sensor BH1750 via barramento I2C. O sistema monitora a intensidade luminosa em tempo real, classifica os níveis de luz e salva todas as leituras em arquivo `.txt` para análises futuras.
 
 ---
 
