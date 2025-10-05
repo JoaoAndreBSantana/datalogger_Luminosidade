@@ -28,7 +28,7 @@ Armazena todas as leituras realizadas, incluindo status de luminosidade e regist
 ![Placa ](img/labrador32.jpeg) 
 
 **Sensor BH1750**
-![sensor](img/luminosidade-sensor-removebg-preview.jpeg)
+![sensor](img/luminosidade-sensor-removebg-preview.png)
 
 ---
 
