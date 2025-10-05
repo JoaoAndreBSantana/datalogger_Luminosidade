@@ -53,9 +53,8 @@ Armazena todas as leituras realizadas, incluindo status de luminosidade e regist
 ---
 
 ## Exemplo de Registro (`joao.txt`)
-[2025-10-05 18:10:12] Luminosidade: 123.45 lux | Status: LUZ NORMAL
-[2025-10-05 18:10:14] Luminosidade: 45.67 lux | Status: LUZ FRACA
-[2025-10-05 18:10:16] Erro na leitura do sensor.
+
+![sensor](img/Captura-de-tela-2025-10-05-190205.png)
 
 
 ---
