@@ -54,7 +54,7 @@ Armazena todas as leituras realizadas, incluindo status de luminosidade e regist
 
 ## Exemplo de Registro (`joao.txt`)
 
-![sensor](img/Captura-de-tela-2025-10-05-190205.png)
+![captura](img/Captura de tela 2025-10-05 190205.png)
 
 
 ---
